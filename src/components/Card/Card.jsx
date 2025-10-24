@@ -1,13 +1,16 @@
-// Card.jsx
 import React from 'react'
 
-const Card = ({ title, description }) => {
+
+const Hero = () => {
   return (
-    <div className="w-[200px] h-[300px] bg-amber-950 rounded-lg p-4 shadow-lg flex flex-col justify-between">
-      <h2 className="text-white font-bold text-lg">{title}</h2>
-      <p className="text-white text-sm mt-2">{description}</p>
+    <div className=" flex items-center justify-center bg-orange-700 mt-16 mb-16">
+      <div className="flex flex-col sm:flex-row gap-8">
+        <Card title="Card 1" description="Some description 1" />
+        <Card title="Card 2" description="Some description 2" />
+        <Card title="Card 3" description="Some description 3" />
+      </div>
     </div>
   )
 }
 
-export default Card
+export default Hero
